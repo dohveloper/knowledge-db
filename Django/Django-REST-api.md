@@ -22,7 +22,7 @@ Django REST Framework는 serializer를 제공함으로써 쉽게 json으로 Djan
 
 ###2) Serializer 
 DRF 공식문서에 따르면 시리얼라이저란 쿼리셋이나 모델인스턴스와 같은 복잡한 데이터를 json 등과 같은 컨텐트 타입으로 쉽게 변환할 수 있는 파이썬 데이터타입으로 만들어주는 것이라고 한다.
-_Serializers allow complex data such as querysets and model instances to be converted to native Python datatypes that can then be easily rendered into JSON, XML or other content types._
+>Serializers allow complex data such as querysets and model instances to be converted to native Python datatypes that can then be easily rendered into JSON, XML or other content types.
 DRF사용을 위해서는 시리얼라이저를 사용할 모델을 연결해주어야한다.
 ```
 # serializers.py
@@ -41,7 +41,7 @@ Django 공식문서에 따르면 뷰란 특정 템플릿과 함수를 전달하�
 이것만으로는 살짝 설명이 모호하다. 
 사실 더 도움이 되는건 문서 나중 부분에 있는 다음과 같은 설명이다
 "각 뷰는 두 가지 일을 담당한다: 요청한 페이지의 HttpResponse를 반환하거나 Http404 같은 예외 반환"
-_Each view is responsible for doing one of two things: returning an HttpResponse object containing the content for the requested page, or raising an exception such as Http404. The rest is up to you._
+>Each view is responsible for doing one of two things: returning an HttpResponse object containing the content for the requested page, or raising an exception such as Http404. The rest is up to you.
 
 즉 간단히 말해서 요청한 페이지를 "자 여기있어" 하는 역할을 하는 것이다.
 DRF에서는 "요청한 페이지" 대신에 요청한 json이 되시겠다. 
